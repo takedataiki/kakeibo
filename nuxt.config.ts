@@ -11,7 +11,9 @@ export default defineNuxtConfig({
       supabaseKey: process.env.SUPABASE_KEY,
     }
   },
-  // app: {
-  //   baseURL: '/your-repo-name/', // GitHubリポジトリ名
-  // }
+  app: {
+    // 👇 リポジトリ名に置き換える
+    baseURL: '/kakeibo/',  
+    buildAssetsDir: '_nuxt/', // デフォルトだが明示しておくと安全
+  }
 })
